@@ -1,4 +1,8 @@
-import { Space_Grotesk, Playfair_Display, JetBrains_Mono } from "next/font/google";
+import {
+  Space_Grotesk,
+  Playfair_Display,
+  JetBrains_Mono,
+} from "next/font/google";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -17,8 +21,8 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Portfolio | Creative Developer",
-  description: "A showcase of my work and experiences in development and design",
+  title: "Youssef Abdelsalam",
+  description: "My portfolio website - YA",
 };
 
 export default function RootLayout({ children }) {
