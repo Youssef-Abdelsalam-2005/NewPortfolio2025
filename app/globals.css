@@ -74,7 +74,10 @@
   .project-grid {
     @apply relative w-full px-4;
     display: grid;
-    grid-template-columns: repeat(24, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    @screen sm {
+      grid-template-columns: repeat(24, 1fr);
+    }
     gap: 1.5rem;
     grid-auto-flow: dense;
   }
@@ -88,30 +91,30 @@
 
   /* Large project - takes up left side */
   .project-size-large {
-    @apply col-span-23 lg:col-span-12 xl:col-span-8;
+    @apply col-span-12 lg:col-span-12 xl:col-span-8;
     @apply xl:aspect-[1/1.36];
     @apply xl:row-span-2;
   }
 
   /* Small project - for right side stacking */
   .project-size-small {
-    @apply col-span-23 lg:col-span-12 xl:col-span-8;
+    @apply col-span-12 lg:col-span-12 xl:col-span-8;
     @apply xl:aspect-[1.5/1];
   }
 
   /* Wide project - spans full width */
   .project-size-wide {
-    @apply col-span-23 lg:col-span-12 xl:col-span-16;
+    @apply col-span-12 lg:col-span-12 xl:col-span-16;
     @apply xl:aspect-[3.2/1];
   }
 
   .project-size-wider {
-    @apply col-span-23 lg:col-span-12 xl:col-span-16;
+    @apply col-span-12 lg:col-span-12 xl:col-span-16;
     @apply xl:aspect-[3.07/1];
   }
 
   .project-size-tall {
-    @apply col-span-23 lg:col-span-12 xl:col-span-6;
+    @apply col-span-12 lg:col-span-12 xl:col-span-6;
     @apply xl:aspect-[1/1.5];
   }
 
