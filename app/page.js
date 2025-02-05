@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import TextPressure from "./components/text/TextPressure";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -337,7 +338,30 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               className="text-[9rem] md:text-[20rem] font-bold mb-6 font-humane"
             >
-              Youssef Abdelsalam
+              <TextPressure
+                text="Youssef"
+                flex={true}
+                alpha={false}
+                stroke={true}
+                width={true}
+                weight={true}
+                italic={true}
+                textColor="text-[var(--primary)]"
+                strokeColor="text-[var(--primary)]"
+                minFontSize={36}
+              />
+              <TextPressure
+                text="Abdelsalam"
+                flex={true}
+                alpha={false}
+                stroke={true}
+                width={true}
+                weight={true}
+                italic={true}
+                textColor="text-[var(--primary)]"
+                strokeColor="text-[var(--primary)]"
+                minFontSize={36}
+              />
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
